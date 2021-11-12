@@ -2,7 +2,7 @@
 
 Simple WhatsApp Bot
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Nurutomo/wabot-aq)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/XTG-BRUTAL/ABXBOT)
 
 ## FOR TERMUX/UBUNTU/SSH USER
 
@@ -12,10 +12,10 @@ apt install git -y
 apt install nodejs -y
 apt install ffmpeg -y
 apt install imagemagick -y
-git clone https://github.com/Nurutomo/wabot-aq
-cd wabot-aq
+git clone https://github.com/XTG-BRUTAL/ABXBOT
+cd ABXBOT
 npm install
-npm update
+npm start
 ```
 
 ## INSTALL ON TERMUX WITH UBUNTU
