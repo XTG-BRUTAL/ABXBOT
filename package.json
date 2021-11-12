@@ -1,5 +1,5 @@
 {
-  "name": "wabot-aq",
+  "name": "ABXBOT",
   "version": "2.5.1",
   "description": "Customizable WhatsApp Bot",
   "depecrated": false,
@@ -22,13 +22,13 @@
     "whatsapp",
     "js-whatsapp"
   ],
-  "homepage": "https://github.com/Nurutomo/wabot-aq",
+  "homepage": "https://github.com/XTG-BRUTAL/ABXBOT",
   "author": {
-    "name": "Nurutomo"
+    "name": "Brutal"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Nurutomo/wabot-aq.git"
+    "url": "git+https://github.com/XTG-BRUTAL/ABXBOT.git"
   },
   "bugs": {
     "url": "https://github.com/Nurutomo/wabot-aq/issues"
