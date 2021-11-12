@@ -1,7 +1,7 @@
 {
-  "name": "wabot-aq",
-  "description": "Lightweight WhatsApp Bot",
-  "repository": "https://github.com/Nurutomo/wabot-aq",
+  "name": "BNXBOT",
+  "description": "This bot was developed by BRUTAL/Arnab",
+  "repository": "https://github.com/XTG-BRUTAL/ABXBOT",
   "logo": "https://node-js-sample.herokuapp.com/node.png",
   "keywords": ["bot", "whatsapp", "whatsapp-bot"]
 }
