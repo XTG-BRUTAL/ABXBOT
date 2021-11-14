@@ -43,6 +43,7 @@ global.DATABASE = global.db // Backwards Compatibility
 
 global.conn = new WAConnection()
 conn.version = [2, 2143, 3]
+conn.browserDescription = ["Subscribe Brutal", "Chrome", "3.0"];
 let authFile = `${opts._[0] || 'session'}.data.json`
 if (fs.existsSync(authFile)) conn.loadAuthInfo(authFile)
 if (opts['trace']) conn.logger.level = 'trace'
@@ -60,7 +61,7 @@ conn.user = {
 }
 if (opts['test']) {
   conn.user = {
-    jid: '919101765679@s.whatsapp.net',
+    jid: '1234@s.whatsapp.net',
     name: 'test',
     phone: {}
   }
