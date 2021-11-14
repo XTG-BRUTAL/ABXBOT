@@ -16,11 +16,11 @@ let handler = async function (m, { text, usedPrefix }) {
   user.registered = true
   let sn = createHash('md5').update(m.sender).digest('hex')
   m.reply(`
-Daftar berhasil!
+list succeed!
 
 ╭─「 Info 」
-│ Nama: ${name}
-│ Umur: ${age} tahun
+│ name: ${name}
+│ age: ${age} year
 │ SN: ${sn}
 ╰────
 *if your sn is lost, type ${usedPrefix}ceksn
