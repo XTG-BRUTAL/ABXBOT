@@ -62,7 +62,7 @@ if (opts['test']) {
   conn.user = {
     jid: '919101765679@s.whatsapp.net',
     name: 'test',
-    phone: {919101765679}
+    phone: {}
   }
   conn.prepareMessageMedia = (buffer, mediaType, options = {}) => {
     return {
