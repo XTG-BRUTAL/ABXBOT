@@ -60,7 +60,7 @@ conn.user = {
 }
 if (opts['test']) {
   conn.user = {
-    jid: '2219191@s.whatsapp.net',
+    jid: '919101765679@s.whatsapp.net',
     name: 'test',
     phone: {}
   }
@@ -97,7 +97,7 @@ if (opts['test']) {
       }
     })
   }
-  rl.on('line', line => conn.sendMessage('123@s.whatsapp.net', line.trim(), 'conversation'))
+  rl.on('line', line => conn.sendMessage('919101765679@s.whatsapp.net', line.trim(), 'conversation'))
 } else {
   rl.on('line', line => {
     process.send(line.trim())
@@ -134,10 +134,10 @@ global.reloadHandler = function () {
     conn.off('group-participants-update', conn.onParticipantsUpdate)
     conn.off('CB:action,,call', conn.onCall)
   }
-  conn.welcome = 'Hi, @user!\nSelamat datang di grup @subject\n\n@desc'
-  conn.bye = 'Selamat tinggal @user!'
-  conn.spromote = '@user sekarang admin!'
-  conn.sdemote = '@user sekarang bukan admin!'
+  conn.welcome = 'Hi, @user!\nWelcome to the group @subject\n\n@desc'
+  conn.bye = 'Goodbye @user!'
+  conn.spromote = '@user now admin!'
+  conn.sdemote = '@user now no admin!'
   conn.handler = handler.handler
   conn.onDelete = handler.delete
   conn.onParticipantsUpdate = handler.participantsUpdate
