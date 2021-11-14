@@ -148,6 +148,7 @@ teks = ` [ Group Opened ] \n\n_Group has been opened by admin_\n_Now all members
 client.sendMessage(metdata.id, teks, MessageType.text, {quoted: fkontakk})
 console.log(`- [ Group Opened ] - In ${metdata.subject}`)
 }
+<<<<<<< HEAD
 else if(anu.announce == 'true'){
 teks = ` [ Group Closed ] \n\n_Group has been closed by admin_\n_Now only admin can send messages_`
 client.sendMessage(metdata.id, teks, MessageType.text, {quoted: fkontakk})
@@ -158,6 +159,43 @@ tag = anu.descOwner.split('@')[0] + '@s.whatsapp.net'
 teks = ` [ Group Description Change ] \n\nGroup description has been changed by Admin @${anu.descOwner.split('@')[0]}\n• New Description : ${anu.desc}`
 client.sendMessage(metdata.id, teks, MessageType.text, {contextInfo: {"mentionedJid": [tag]}, quoted: fkontakk})
 console.log(`- [ Group Description Change ] - In ${metdata.subject}`)
+=======
+// global.LOGGER = logs()
+const PORT = process.env.PORT || 3000
+global.opts = new Object(yargs(process.argv.slice(2)).exitProcess(false).parse())
+
+global.prefix = new RegExp('^[' + (opts['prefix'] || '‎xzXZ/i!#$%+£¢€¥^°=¶∆×÷π√✓©®:;?&.\\-').replace(/[|\\{}()[\]^$+*?.\-\^]/g, '\\$&') + ']')
+
+global.db = new Low(
+  /https?:\/\//.test(opts['db'] || '') ?
+    new cloudDBAdapter(opts['db']) :
+    new JSONFile(`${opts._[0] ? opts._[0] + '_' : ''}database.json`)
+)
+global.DATABASE = global.db // Backwards Compatibility
+
+global.conn = new WAConnection()
+conn.version = [2, 2143, 3]
+let authFile = `${opts._[0] || 'session'}.data.json`
+if (fs.existsSync(authFile)) conn.loadAuthInfo(authFile)
+if (opts['trace']) conn.logger.level = 'trace'
+if (opts['debug']) conn.logger.level = 'debug'
+if (opts['big-qr']) conn.on('qr', qr => generate(qr, { small: false }))
+if (!opts['test']) setInterval(async () => {
+  await global.db.write()
+}, 60 * 1000) // Save every minute
+if (opts['server']) require('./server')(global.conn, PORT)
+
+conn.user = {
+  jid: '',
+  name: 'XTG-BRUTAL',
+  phone: {}
+}
+if (opts['test']) {
+  conn.user = {
+    jid: '919101765679@s.whatsapp.net',
+    name: 'test',
+    phone: {}
+>>>>>>> 681b3987fc0bba6729ba1362236d1a2cfeae903d
   }
 else if(anu.restrict == 'false'){
 teks = `- [ 𝗚𝗿𝗼𝘂𝗽 𝗦𝗲𝘁𝘁𝗶𝗻𝗴 𝗖𝗵𝗮??𝗴𝗲 ] -\n\nEdit Group info has been opened for members\nNow all members can edit this group info`
