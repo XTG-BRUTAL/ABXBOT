@@ -174,7 +174,7 @@ conn.logger.level = 'debug'
 
 ---------
 
-<a href="https://api.xteam.xyz"><img src="https://media1.tenor.com/images/18649b288a194f2aaf94bf43da2921e0/tenor.gif?itemid=23630269" width="100" height="100"></a> | [![Nurutomo](https://media1.tenor.com/images/18649b288a194f2aaf94bf43da2921e0/tenor.gif?itemid=23630269size=100)](https://github.com/Nurutomo) | [![Ariffb](https://github.com/ariffb25.png?size=100)](https://github.com/ariffb25) | [![Ftwrr](https://github.com/Ftwrr.png?size=100)](https://github.com/Ftwrr) 
+<a href="https://api.xteam.xyz"><img src="https://media1.tenor.com/images/18649b288a194f2aaf94bf43da2921e0/tenor.gif?itemid=23630269" width="100" height="100"></a> | [![Nurutomo]("https://media1.tenor.com/images/18649b288a194f2aaf94bf43da2921e0/tenor.gif?itemid=23630269"  width="100" height="100")](https://github.com/Nurutomo) | [![Ariffb](https://github.com/ariffb25.png?size=100)](https://github.com/ariffb25) | [![Ftwrr](https://github.com/Ftwrr.png?size=100)](https://github.com/Ftwrr) 
 ----|----|----|----
 [XTEAM](https://api.xteam.xyz/) | [Arnab](https://github.com/XTG-BRUTAL) | [Ariffb](https://github.com/ariffb25) | [Ftwrr](https://github.com/Ftwrr)
 Powered by XTEAM | Author / Creator | Most Active Contributor | 2nd Most Active Contributor
