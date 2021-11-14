@@ -55,14 +55,14 @@ if (opts['server']) require('./server')(global.conn, PORT)
 
 conn.user = {
   jid: '',
-  name: '',
-  phone: {}
+  name: 'XTG-BRUTAL',
+  phone: {919101765679}
 }
 if (opts['test']) {
   conn.user = {
-    jid: '2219191@s.whatsapp.net',
+    jid: '919101765679@s.whatsapp.net',
     name: 'test',
-    phone: {}
+    phone: {919101765679}
   }
   conn.prepareMessageMedia = (buffer, mediaType, options = {}) => {
     return {
