@@ -56,7 +56,7 @@ if (opts['server']) require('./server')(global.conn, PORT)
 conn.user = {
   jid: '',
   name: 'XTG-BRUTAL',
-  phone: {919101765679}
+  phone: {}
 }
 if (opts['test']) {
   conn.user = {
