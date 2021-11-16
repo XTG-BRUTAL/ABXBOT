@@ -1,14 +1,14 @@
 let fetch = require('node-fetch')
 
 let handler = async (m, { args, usedPrefix, command }) => {
-    let er = `Opsi tersedia:
+    let er = `Options available:
 • latinkejawa
 • latinkesunda
 • jawakelatin
 • sundakelatin
 
-Contoh penggunaan:
-${usedPrefix + command} latinkejawa selamat pagi
+Usage examples:
+${usedPrefix + command} latinkejawa good morning
     `.trim()
     if (!args[0]) throw er
 
