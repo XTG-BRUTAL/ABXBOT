@@ -2,7 +2,7 @@ let handler = async (m, { conn, usedPrefix }) => {
     let id = m.chat
     conn.absen = conn.absen ? conn.absen : {}
     if (!(id in conn.absen)) {
-        await conn.sendButton(m.chat, `Tidak ada absen berlangsung!`, '© stikerin', 'Mulai', `${usedPrefix}mulaiabsen`, m)
+        await conn.sendButton(m.chat, `No absences in progress!`, '© stikerin', 'Start', `${usedPrefix}mulaiabsen`, m)
         throw false
     }
 
@@ -17,7 +17,7 @@ let handler = async (m, { conn, usedPrefix }) => {
     let caption = `
 Tanggal: ${date}
 ${conn.absen[id][2]}
-┌〔 daftar absen 〕
+┌〔 absent list 〕
 ├ Total: ${absen.length}
 ${list}
 └────`.trim()
