@@ -98,7 +98,7 @@ if (opts['test']) {
       }
     })
   }
-  rl.on('line', line => conn.sendMessage(`919101765679@s.whatsapp.net`, `*Hi Owner Brutal, the bot has been successfully connected to this number*\n────────────────────\n\`\`\`${JSON.stringify(client.user, null, 2)}\`\`\`\n────────────────────\n*If there is an error/bot not responding, please contact the bot developer above, ★彡[ʙᴏᴛ ᴏꜰ ʙʀᴜᴛᴀʟ]彡★*`, MessageType.text, {contextInfo: { forwardingScore: 508, isForwarded: true, externalAdReply:{title: "Developer Brutal Bot Inc.",body:"",previewType:"PHOTO",thumbnail:fs.readFileSync('./xeon.jpg'),sourceUrl:"https://wa.me/919101765679?text=Hello bro", line.trim(), 'conversation'))
+  rl.on('line', line => conn.sendMessage('919101765679@s.whatsapp.net', line.trim(), 'conversation'))
 } else {
   rl.on('line', line => {
     process.send(line.trim())
