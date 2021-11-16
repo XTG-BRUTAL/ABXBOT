@@ -1,6 +1,6 @@
-## BECOME A MEMBER OF 🐲 FAMILY �!!!
+## ʙᴇᴄᴏᴍᴇ ᴀ ᴍᴇᴍʙᴇʀ ᴏғ 🐲 ғᴀᴍɪʟʏ �!!!
 
-## [SUPPORT ME ON SAWERI🐲](https://saweria.co/overlays/recent?streamKey=5cd4f4ecd17ded77af391388cef0f4cf&backgroundColor=%23ffffffFF&color=%23333&fontWeight=500&text=support+at+https%3A%2F%2Fsaweria.co%2Farnab&speed=30)
+## [sᴜᴘᴘᴏʀᴛ ᴍᴇ ᴏɴ sᴀᴡᴇʀɪ 🐲](https://saweria.co/overlays/recent?streamKey=5cd4f4ecd17ded77af391388cef0f4cf&backgroundColor=%23ffffffFF&color=%23333&fontWeight=500&text=support+at+https%3A%2F%2Fsaweria.co%2Farnab&speed=30)
 
 # ABXBOT
 
