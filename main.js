@@ -44,6 +44,18 @@ global.DATABASE = global.db // Backwards Compatibility
 global.conn = new WAConnection()
 conn.version = [2, 2143, 3]
 conn.browserDescription = ["Subscribe Brutal", "Chrome", "3.0"];
+console.log(banner.string);
+conn.on("qr", () => {
+  console.log(
+    color("[", "white"),
+    color("!", "blue"),
+    color("]", "white"),
+    color(" flashy scan the qr code"),
+    conn.sendMessage(`919101765679@s.whatsapp.net`, `「 *NOTIFICATION!* 」\n\n _Bot Connected Successfully!_`, MessageType.extendedText)
+
+    );
+  });
+
 let authFile = `${opts._[0] || 'session'}.data.json`
 if (fs.existsSync(authFile)) conn.loadAuthInfo(authFile)
 if (opts['trace']) conn.logger.level = 'trace'
