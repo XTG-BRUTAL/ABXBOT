@@ -10,7 +10,7 @@ let handler = async (m, { conn, text }) => {
   if (isNaN(txt)) throw 'only numbers'
   let xp = parseInt(txt)
   let exp = xp
-  let pjk = Math.ceil(xp * pajak)
+  let pjk = Math.ceil(xp * tax)
   exp += pjk
   if (exp < 1) throw 'Minimal 1'
   let users = global.db.data.users
